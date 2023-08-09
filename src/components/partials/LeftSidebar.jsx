@@ -27,12 +27,6 @@ function LeftSideBar() {
     setIsAsideOpen((prevIsAsideOpen) => !prevIsAsideOpen)
   }
 
-  const [isSidebarOpen, setSidebarOpen] = useState(false)
-
-  // Function to handle sidebar toggle
-  const handleRightSidebarToggle = () => {
-    setSidebarOpen(!isSidebarOpen)
-  }
 
   // Function to handle sidebar toggle
   const handleSidebarToggle = () => {
@@ -122,7 +116,7 @@ function LeftSideBar() {
             <img
               class="rounded-full border p-2"
               src="../images/unnamed.png"
-              alt="profile photo"
+              alt=""
             />
           </div>
           <h4 className="text-m mt-3 pb-3 text-center font-medium text-gray-500 dark:text-gray-400">

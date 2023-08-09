@@ -11,7 +11,6 @@ import {
   FaDownload,
   FaPhone,
   FaEnvelope,
-  FaGithub,
 } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
 import { BsCodeSlash } from 'react-icons/bs'
@@ -75,6 +74,7 @@ function Home() {
           e.target.reset()
         },
         (error) => {
+          isFormSubmitted(false)
           toast.error('Message sending failed!', { autoClose: 3000 })
           e.target.reset()
         }
@@ -89,8 +89,8 @@ function Home() {
           <div className="col-md-4 md:p-5 flex justify-center items-center my-4">
             <img
               src="../images/ike.png"
+              alt=""
               className="border border-gray-600 dark:border-gray-600"
-              alt="Profile Picture"
             />
           </div>
           <div className="col-md-6 flex flex-col justify-center mb-5">

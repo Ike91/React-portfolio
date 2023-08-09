@@ -25,6 +25,7 @@ function Contact() {
           e.target.reset()
         },
         (error) => {
+          isFormSubmitted(false)
           toast.error('Message sending failed!', { autoClose: 3000 })
           e.target.reset()
         }
