@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.scrollbar-hide {
+  /* For Firefox */
+  scrollbar-width: none;
+  /* For other browsers */
+  -ms-overflow-style: none;
+  /* For Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(360deg);
+  white-space: nowrap;
+}
+li a {
+  text-decoration: none !important;
+}
+li a:hover {
+  text-decoration: none !important;
+  color: yellow !important;
+}
+.card {
+  background-color: #24242e !important;
+  border: 1px solid #302f2f;
+ 
+}
+.popupform{
+    background-color: #24242e !important;
+  border: 1px solid #302f2f;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.card {
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+/* header */
+.header{
+  
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  
+}
+
+.header p{
+  
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 22px;
+  
+}
+
+/* education */
+.education p{
+  
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+  
+}
+
+/* 
+sidebar  */
+.sidebar h4 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.sidebar li{
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+}
+
+.certificates h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.certificates p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+}
+
+.about h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+}
+
+.about {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+}
+.about p{
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  
+}
+
+/* education */
+
+.education p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+}
+
+.education h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+}
+.education .btn {
+  background: rgb(172, 172, 65) !important;
+}
+
+/* work experience */
+.Work li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+}
+.Work p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+}
+
+.work h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+}
+
+/* home */
+.projects a {
+  text-decoration: none !important;
+}
+.projects p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+}
+
+.projects h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+}
+/* contact */
+.contact {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 18px;
 }
