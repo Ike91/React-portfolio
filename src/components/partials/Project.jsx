@@ -40,7 +40,7 @@ function Projects(props) {
     .join(' ')
 
   return (
-    <div className="col-md-6 my-2">
+    <div className="col-md-4 my-2">
       <div className="bg-[#24242e] card shadow-md">
         <div className="p-2 mb-4 ">
           <img src={imageLink} alt={projectName} className="w-full" />
@@ -71,8 +71,8 @@ function Projects(props) {
             </div>
           </div>
 
-          <div className="card-actions -mb-5">
-            <div className="flex m-2 space-x-2 flex-wrap">
+          <div className="card-actions -mb-5 mr-4">
+            <div className="button-container m-2 space-x-2">
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 <button
                   type="button"

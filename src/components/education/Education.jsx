@@ -35,20 +35,12 @@ function Education() {
               2019-Present
             </time>
             <p className="text-base font-normal text-gray-500 dark:text-gray-400 leading-8">
-              Highly motivated and skilled final year student seeking admission
-              into a prestigious graduate program in the field of software
-              development. Eager to leverage my strong foundation in
-              programming, problem-solving abilities, and passion for
-              cutting-edge technologies to contribute to the advancement of
-              software development practices. With a proven track record of
-              academic excellence and a strong desire to expand my knowledge and
-              expertise, I aim to acquire comprehensive skills in software
-              engineering, gain exposure to industry best practices, and make
-              valuable contributions to the field. Through a graduate program, I
-              intend to cultivate a deep understanding of software development
-              methodologies, refine my programming skills, and collaborate with
-              industry professionals to drive innovation and deliver robust
-              software solutions.
+              I am a final-year student with a strong foundation in programming
+              and a passion for software development. I am eager to join a
+              prestigious graduate program to further advance my skills and
+              knowledge. My goal is to contribute to the field by staying
+              updated with the latest technologies and collaborating with
+              industry professionals to create innovative software solutions.
             </p>
           </li>
           <li className="mb-10 ml-6">

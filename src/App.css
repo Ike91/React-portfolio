@@ -162,9 +162,85 @@ sidebar  */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
 }
+
+
 /* contact */
 .contact {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
+}
+
+
+.Header-text{
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+
+.random-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3px;
+  font-size: 24px;
+}
+
+
+
+ .button-container {
+            display: flex;
+            
+        }
+
+        .button {
+            width: 120px;
+            margin: 0 10px; /* Add some spacing between buttons */
+        }
+
+        @media screen and (max-width: 600px) {
+            .button-container {
+                justify-content: center;
+                width: 100%; /* Center the container and make it full width on smaller screens */
+            }
+        }
+
+
+
+/* Media query for smaller screens like smartphones */
+@media (max-width: 768px) {
+  .random-text{
+    text-align: center; /* Center-align the text on smaller screens */
+  }
+  .Header-text{
+    text-align: center; 
+    margin-top: 0 !important;
+  }
+  .student-text{
+    text-align: center; 
+    margin-top: 0 !important;
+  }
+
+  .header{
+    padding: 2px !important;
+    background: transparent !important;
+  }
+ 
+ 
+}
+
+@media (max-width: 768px) {
+  ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    margin: 0; 
+    padding: 0; 
+}
+
+ 
+ 
 }

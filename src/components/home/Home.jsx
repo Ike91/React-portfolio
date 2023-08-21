@@ -13,17 +13,16 @@ import {
   FaEnvelope,
 } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
-import { BsCodeSlash } from 'react-icons/bs'
 import { VscRequestChanges } from 'react-icons/vsc'
 
 import resume from '../../documents/Isaac.pdf'
 
 function Home() {
   const [text, setText] = useState('')
-  const fullText = 'ISAAC IKE MHLANGA'
+  const fullText = 'ISAAC MHLANGA'
 
   const full =
-    'I am a highly motivated and skilled final year student seeking admission into a prestigious software development graduate program. With a strong programming foundation and exceptional problem-solving abilities, I aim to advance software development practices using cutting-edge technologies. My track record of academic excellence and passion for learning will help me acquire comprehensive software engineering skills and industry best practices. I aspire to collaborate with professionals, driving innovation and delivering robust software solutions.'
+    'I am a final-year student with a strong foundation in programming and a passion for software development. I am eager to join a prestigious graduate program to further advance my skills and knowledge. My goal is to contribute to the field by staying updated with the latest technologies and collaborating with industry professionals to create innovative software solutions.'
 
   useEffect(() => {
     let currentText = ''
@@ -93,35 +92,19 @@ function Home() {
               className="border border-gray-600 dark:border-gray-600"
             />
           </div>
-          <div className="col-md-6 flex flex-col justify-center mb-5">
-            <div className="flex items-center">
-              <span>
-                <BsCodeSlash size={60} className="text-yellow-400 mb-2 mr-1 " />
-              </span>
-              <h1 className="ml-2 text-gray-500 dark:text-gray-400">{text}</h1>
+
+          <div className="col-md-8">
+            <div className="Header-text mt-5 text-yellow-400 mb-3">{text}</div>
+            <div className="mt-1 text-white mb-2">
+              <h2 className="student-text">
+                University Of Johannesburg student
+              </h2>
             </div>
-            <h4 className="text-gray-500 dark:text-yellow-400 leading-8">
-              University of johannesburg student
-            </h4>
-            <p className="leading-8 isaac text-gray-500 dark:text-gray-400 p-2">
+            <div class="random-text leading-8 text-gray-500 mb-4 dark:text-gray-400">
               {full}
-            </p>
-            <div className="d-flex flex-wrap justify-content-start mt-2 mb-2 gap-4 flex-sm-nowrap flex-md-wrap flex-md-column gap-md-0">
-              <div className="d-flex align-items-center text-gray-500">
-                <span>
-                  <FaPhone className="text-yellow-500 me-2 dark:text-yellow-500 hover:text-yellow-400" />
-                </span>
-                067 100 4050
-              </div>
-              <div className="d-flex align-items-center text-gray-500">
-                <span>
-                  <FaEnvelope className="text-yellow-500 me-2 dark:text-yellow-500 hover:text-yellow-400" />
-                </span>
-                isaac.mhlanga13@gmail.com
-              </div>
             </div>
 
-            <div className="flex items-center space-x-3 mb-3 mt-3">
+            <div className="flex items-center space-x-3 mb-3 mt-3 justify-center sm:justify-start">
               <div className="rounded-full p-2 border border-gray-800 text-gray-500">
                 <a
                   href="https://www.linkedin.com/in/isaac-mhlanga-31ba62217"
@@ -184,7 +167,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="flex space-x-4 mt-4">
+            <div className="button-container mt-4">
               <button
                 type="button"
                 onClick={handleDownload}
@@ -280,7 +263,7 @@ function Home() {
                         type="hidden"
                         id="message"
                         name="message"
-                        value="Requesting Transcript"
+                        value="Requesting Academic Transcript"
                         className="w-full border border-gray-300 rounded px-3 py-2"
                         placeholder="Your email"
                         required
