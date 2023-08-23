@@ -336,6 +336,11 @@ li {
     transform: translateY(-50%);
     width: auto;
   }
+  .preview-card__text {
+   padding-left: 10px;
+  padding-right: 10px;
+  
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -393,6 +398,8 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
+   padding-left: 10px;
+  padding-right: 10px;
   
 }
 
