@@ -44,8 +44,8 @@ function Projects(props) {
                   <div class="preview-card__title text-white dark:text-white">
                     {projectName}
                   </div>
-                  <div className="ml-5 mr-5">
-                    <p class="preview-card__text text-gray-500 dark:text-gray-400">
+                  <div className="border border-lg">
+                    <p class="text-gray-500 dark:text-gray-400">
                       {projectDescription}
                     </p>
                   </div>
