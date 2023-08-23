@@ -253,7 +253,7 @@ li {
   box-shadow: 0px 3px 10px rgba(34, 35, 58, 0.2);
   padding: 30px 25px 30px;
   border-radius: 25px;
-  /* border: 1px solid #302f2f; */
+  border: 1px solid #302f2f;
   transition: all 0.3s;
 }
 
@@ -389,6 +389,17 @@ li {
   color: #0d0925;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 360px) {
+ .preview-card__title {
+  margin-top: -55px;
+  margin-bottom: 20px;
+}
+.preview-card__button {
+  width: 100px;
+ 
+}
+}
+
 
 .preview-card__text {
   margin-bottom: 30px;
@@ -396,9 +407,6 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
-   padding-left: 40px;
-  padding-right: 40px;
- 
   overflow: hidden; 
   text-overflow: ellipsis;
   
