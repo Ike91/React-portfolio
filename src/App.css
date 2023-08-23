@@ -274,6 +274,8 @@ li {
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .preview-card {
     height: auto;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
@@ -336,11 +338,6 @@ li {
     transform: translateY(-50%);
     width: auto;
   }
-  .preview-card__text {
-   padding-left: 10px;
-  padding-right: 10px;
-  
-}
 }
 
 @media screen and (max-width: 576px) {
