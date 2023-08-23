@@ -31,7 +31,7 @@ function Projects(props) {
   } = props
 
   return (
-    <div className="col-md-12 my-2">
+    <div className="col-md-12 my-2 sm:my-1">
       <div class="container">
         <div class="row mt-5">
           <div class="preview-card">
@@ -44,10 +44,8 @@ function Projects(props) {
                   <div class="preview-card__title text-white dark:text-white">
                     {projectName}
                   </div>
-                  <div className="border border-lg mb-3 p-5">
-                    <p class="text-gray-500 dark:text-gray-400">
-                      {projectDescription}
-                    </p>
+                  <div class="preview-card__text text-gray-500 dark:text-gray-400">
+                    {projectDescription}
                   </div>
 
                   <div className="text-center sm:text-left -mt-4 mb-2">

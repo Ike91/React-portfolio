@@ -274,9 +274,9 @@ li {
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .preview-card {
     height: auto;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    
   }
+  
 }
 
 .preview-card__item {
@@ -395,9 +395,21 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
-   padding-left: 10px;
-  padding-right: 10px;
+   padding-left: 3px;
+  padding-right: 3px;
+ 
+  overflow: hidden; 
+  text-overflow: ellipsis;
   
+}
+@media screen and (max-width: 360px) {
+ 
+  .preview-card__button{
+   width: 60px;
+  }
+  .preview-card__title{
+    margin-top: -60px !important;
+  }
 }
 
 .preview-card__button {
