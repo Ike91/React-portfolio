@@ -322,7 +322,7 @@ li {
 }
 
 .preview-card__img img {
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -393,6 +393,8 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .preview-card__button {
