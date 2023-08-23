@@ -9,8 +9,6 @@ import {
   FaInstagram,
   FaTwitter,
   FaDownload,
-  FaPhone,
-  FaEnvelope,
 } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
 import { VscRequestChanges } from 'react-icons/vsc'
