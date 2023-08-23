@@ -44,14 +44,16 @@ function Projects(props) {
                   <div class="preview-card__title text-white dark:text-white">
                     {projectName}
                   </div>
-                  <div class="preview-card__text text-gray-500 dark:text-gray-400">
-                    {projectDescription}
+                  <div>
+                    <p class="preview-card__text text-gray-500 dark:text-gray-400">
+                      {projectDescription}
+                    </p>
                   </div>
 
                   <div className="text-center sm:text-left -mt-4 mb-2">
                     <div className="flex justify-center sm:justify-start">
                       {languageIcons.map(({ icon, iconName }) => {
-                        const IconComponent = icons[icon] // Get the icon component dynamically
+                        const IconComponent = icons[icon]
 
                         return (
                           <p
