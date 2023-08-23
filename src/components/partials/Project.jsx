@@ -41,8 +41,12 @@ function Projects(props) {
                   <img src={imageLink} alt={projectName} className="w-full" />
                 </div>
                 <div class="preview-card__content">
-                  <div class="preview-card__title">{projectName}</div>
-                  <div class="preview-card__text">{projectDescription}</div>
+                  <div class="preview-card__title text-white dark:text-white">
+                    {projectName}
+                  </div>
+                  <div class="preview-card__text text-gray-500 dark:text-gray-400">
+                    {projectDescription}
+                  </div>
 
                   <div className="text-center sm:text-left -mt-4 mb-2">
                     <div className="flex justify-center sm:justify-start">
@@ -76,7 +80,7 @@ function Projects(props) {
                         <button
                           type="button"
                           onClick=""
-                          className="preview-card__button text-white bg-yellow-400 sm:mr-2  hover:bg-[#24242e] w-full sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+                          className="preview-card__button text-white bg-yellow-400 sm:mr-3 sm:ml-3  hover:bg-[#24242e] w-full sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
                         >
                           <div className="flex items-center text-center text-white">
                             <span>
@@ -94,7 +98,7 @@ function Projects(props) {
                         >
                           <button
                             type="button"
-                            className="preview-card__button text-white bg-yellow-400 hover:bg-[#24242e] w-full sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+                            className="preview-card__button text-white bg-yellow-400 hover:bg-[#24242e] w-full sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 sm:mr-3 sm:ml-3 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
                           >
                             <div className="flex items-center text-center text-white">
                               <span>

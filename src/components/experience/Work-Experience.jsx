@@ -20,10 +20,10 @@ function WorkExperience() {
               </svg>
             </span>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              IT Technical Support (Student Assistant)
+              IT Technical Support (ICS)
             </h3>
             <p className="text-sm dark:text-white">
-              (ICS), University of Johannesburg
+              University of Johannesburg
             </p>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               08 March 2023 - Present
@@ -124,8 +124,7 @@ function WorkExperience() {
             </h3>
 
             <ul className="list-disc text-base font-normal text-gray-500 dark:text-gray-400 leading-8">
-              <strong>Mr. Rest Mabunda</strong> [Team Leader (Students
-              Computing)]
+              <strong>Mr. Rest Mabunda</strong> (Team Leader)
               <div className="flex items-center">
                 <span className="">
                   <BsTelephoneFill className="mr-2" />
