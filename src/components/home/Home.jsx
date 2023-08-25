@@ -169,7 +169,7 @@ function Home() {
               <button
                 type="button"
                 onClick={handleDownload}
-                class="text-white bg-yellow-400  hover:bg-[#24242e] focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+                class="text-white bg-yellow-400 border border-gray-400 rounded-md hover:bg-gray-800 w-10px hover:bg-[#24242e] focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
               >
                 <div className="flex items-center  text-white">
                   <span>
@@ -184,7 +184,7 @@ function Home() {
               <button
                 type="button"
                 onClick={togglePopup}
-                class="text-white bg-yellow-400  hover:bg-[#24242e] focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+                class="text-white bg-yellow-400 border border-400 rounded-md hover:bg-gray-800 w-10px hover:bg-[#24242e] focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
               >
                 <div className="flex items-center  text-white">
                   <span>
@@ -270,7 +270,7 @@ function Home() {
 
                     <button
                       type="submit"
-                      className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                      className="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
                     >
                       <div className="flex items-center  text-white">
                         <span>

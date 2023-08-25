@@ -195,13 +195,13 @@ sidebar  */
 
         .button {
             width: 120px;
-            margin: 0 10px; /* Add some spacing between buttons */
+            margin: 0 10px; 
         }
 
         @media screen and (max-width: 600px) {
             .button-container {
                 justify-content: center;
-                width: 100%; /* Center the container and make it full width on smaller screens */
+                width: 100%; 
             }
         }
 
@@ -232,11 +232,13 @@ sidebar  */
 @media (max-width: 768px) {
   ul {
     list-style-type: none; 
+    list-style: none !important;
     padding: 0; 
     margin: 0; 
 }
 
 li {
+    list-style: none !important;
     margin: 0; 
     padding: 0; 
 }
@@ -259,3 +261,4 @@ li {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
+

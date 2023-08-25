@@ -75,7 +75,7 @@ function Education() {
               <button
                 type="button"
                 onClick={togglePopup}
-                class="text-white bg-yellow-400 hover:bg-[#24242e] sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+                class="text-white bg-yellow-400 border hover:bg-gray-800 w-10px rounded-md hover:bg-[#24242e] sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
               >
                 <div className="flex items-center text-center text-white">
                   <span>
@@ -167,7 +167,7 @@ function Education() {
               >
                 <button
                   type="button"
-                  class="text-white bg-yellow-400 hover:bg-[#24242e] sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+                  class="text-white bg-yellow-400 border hover:bg-gray-800 w-10px rounded-md hover:bg-[#24242e] sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
                 >
                   <div className="flex items-center text-center text-white">
                     <span>
