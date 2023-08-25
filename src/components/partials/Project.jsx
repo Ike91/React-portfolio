@@ -31,93 +31,76 @@ function Projects(props) {
   } = props
 
   return (
-    <div className="col-md-12 my-2 sm:my-1">
-      <div class="container">
-        <div class="row mt-5">
-          <div class="preview-card">
-            <div class="preview-card__wrp">
-              <div class="preview-card__item">
-                <div class="preview-card__img">
-                  <img src={imageLink} alt={projectName} className="w-full" />
-                </div>
-                <div class="preview-card__content">
-                  <div class="preview-card__title text-white dark:text-white">
-                    {projectName}
-                  </div>
-                  <div className="preview-card__text text-gray-500 sm:p-20 dark:text-gray-400">
-                    {projectDescription}
-                  </div>
+   
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+        <div class="card project-card my-4">
+          <div class="view overlay">
+          <img src={imageLink} alt={projectName} className="w-full" />
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">{ projectName }</h4>
+            <p class="card-text text-white mt-1">{ projectDescription}</p>
 
-                  <div className="text-center sm:text-left -mt-4 mb-2">
-                    <div className="flex justify-center sm:justify-start">
-                      {languageIcons.map(({ icon, iconName }) => {
-                        const IconComponent = icons[icon]
+            <div className="mt-1 mb-2">
+            <div className="flex">
+              {languageIcons.map(({ icon, iconName }) => {
+                const IconComponent = icons[icon]
 
-                        return (
-                          <p
-                            className="flex mt-2 text-btn text-gray-700"
-                            key={icon}
-                          >
-                            <span>
-                              <IconComponent
-                                className="text-yellow-400 mr-2"
-                                size={24}
-                              />
-                            </span>
-                            <span className="mr-2">{iconName}</span>
-                          </p>
-                        )
-                      })}
-                    </div>
-                  </div>
-                  <div className="card-actions  mb-5 mr-4">
-                    <div className="button-container m-2 space-x-2">
-                      <a
-                        href={githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          type="button"
-                          onClick=""
-                          className="preview-card__button text-white bg-yellow-400 sm:mr-3 sm:ml-3  hover:bg-[#24242e] w-full sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
-                        >
-                          <div className="flex items-center text-center text-white">
-                            <span>
-                              <FaGithub className="text-white mr-1 dark:text-white hover:text-yellow-400 " />
-                            </span>
-                            Code
-                          </div>
-                        </button>
-                      </a>
-                      {liveLink && (
-                        <a
-                          href={liveLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <button
-                            type="button"
-                            className="preview-card__button text-white bg-yellow-400 hover:bg-[#24242e] w-full sm:w-auto focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 sm:mr-3 sm:ml-3 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
-                          >
-                            <div className="flex items-center text-center text-white">
-                              <span>
-                                <TbWorldWww className="text-white mr-1 dark:text-white hover:text-yellow-400" />
-                              </span>
-                              Live
-                            </div>
-                          </button>
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
+                return (
+                  <p
+                    className="flex mt-2 text-btn text-gray-700"
+                    key={icon}
+                  >
+                    <span>
+                      <IconComponent
+                        className="text-yellow-400 mr-2"
+                        size={24}
+                      />
+                    </span>
+                    <span className="mr-2">{iconName}</span>
+                  </p>
+                )
+              })}
             </div>
+          </div>
+
+              <a href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+            <button type="button" class="btn linksBtn btn-sm mr-2">
+            <div className="flex  items-center text-center justify-center text-white">
+            <span>
+              <FaGithub className="text-white mr-1 dark:text-white hover:text-yellow-400 " />
+                 </span>
+                Github
+              </div>
+            </button>
+            </a>
+
+            {liveLink && (
+                <a
+                  href={liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+            <button type="button" className="btn linksBtn btn-sm bg-yellow-400">
+            <div className="flex items-center text-center justify-center text-white">
+            <span>
+              <TbWorldWww className="text-white mr-1 dark:text-white hover:text-yellow-400" />
+                </span>
+                Live       
+            </div>
+            </button>
+            </a>
+              )}
+
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

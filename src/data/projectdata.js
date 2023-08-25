@@ -1,8 +1,8 @@
 const projectData = [
   {
-    projectName: "TINDOG",
+    projectName: "Tindog",
     projectDescription:
-      "I created this project using HTML, CSS, and Bootstrap, showcasing my web development skills. Through this experience, I honed my design, layout, and responsive design abilities. It's a testament to my proficiency in front-end technologies and my commitment to continuous learning in the field of web/software development.",
+      "I built this project with HTML, CSS, and Bootstrap, demonstrating my front-end skills and dedication to learning web development",
     languageIcons: [
       { icon: "FaNodeJs", iconName: "Node.js" },
       { icon: "FaBootstrap", iconName: "Bootstrap" },
@@ -13,9 +13,9 @@ const projectData = [
     imageLink: "../projects/boostraps.png",
   },
   {
-    projectName: "INTELLITUTORS(ON-GOING)",
+    projectName: "Intellitutors",
     projectDescription:
-      "Crafting my project with Node.js, Express, and Bootstrap, I honed skills in backend development, routing, creating responsive web interfaces. This deepened understanding of server-side programming, RESTful APIs, frontend design, showcasing proficiency in these fundamental aspects of web development.",
+      "Using Node.js, Express, and Bootstrap, routing, and frontend skills, showcasing development essentials",
     languageIcons: [
       { icon: "FaNodeJs", iconName: "Node.js" },
       { icon: "FaBootstrap", iconName: "Bootstrap" },
@@ -26,9 +26,9 @@ const projectData = [
     imageLink: "../projects/dash1.jpg",
   },
   {
-    projectName: "BACKROADS",
+    projectName: "Backroads",
     projectDescription:
-      "I transformed a complete HTML and CSS setup into a dynamic React application, integrating Bootstrap for responsive design. This process enhanced my skills in component-based architecture. I gained insights into React's virtual DOM, solidifying my grasp of modern frontend development.",
+      "I converted static HTML/CSS into a dynamic React app with Bootstrap, reinforcing component-based architecture",
     languageIcons: [
       { icon: "FaReact", iconName: "React" },
       { icon: "FaBootstrap", iconName: "Bootstrap" },
@@ -39,22 +39,22 @@ const projectData = [
     imageLink: "../projects/react-2.png",
   },
   {
-    projectName: "REACT APP",
+    projectName: "React app",
     projectDescription:
-      "I developed a lively web page using React and CSS, practicing data handling, interaction design, and page flow management. These skills showcase my proficiency in creating user-friendly React-based websites, demonstrating a strong foundation in modern and engaging web solutions.",
+      "I created an interactive React webpage with CSS, highlighting my skills in data handling, interaction design",
     languageIcons: [
       { icon: "FaReact", iconName: "React" },
       { icon: "FaBootstrap", iconName: "Bootstrap" },
-      { icon: "SiTailwindcss", iconName: "Tailwind" },
+     
     ],
     githubLink: "https://github.com/Ike91/react-chatGPTBUILD",
     liveLink: "https://charming-gumption-1995a8.netlify.app",
     imageLink: "../projects/react-1.png",
   },
   {
-    projectName: "TO-DO",
+    projectName: "To-do app",
     projectDescription:
-      "In this project, I harnessed Vue.js, Vuetify, and JavaScript to craft a minimalist yet dynamic todo app. While developing this app, I honed my skills in Vue's component-based architecture, reactivity system, state management, and seamless integration with Vuetify's UI components. This experience enriched my proficiency in building interactive and responsive web applications using Vue.js.",
+      "I utilized Vue.js, Vuetify, and JavaScript to create a minimalist, dynamic todo app, enhancing my Vue.js understanding",
     languageIcons: [
       { icon: "FaVuejs", iconName: "Vue.js" },
       { icon: "SiTailwindcss", iconName: "Tailwind" },
