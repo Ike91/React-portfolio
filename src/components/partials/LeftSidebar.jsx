@@ -232,7 +232,7 @@ function LeftSideBar() {
               <span>
                 <FaDownload className="text-white mr-1 dark:text-white hover:text-yellow-400 " />
               </span>
-              Resume
+              Download resume
             </div>
           </button>
 
