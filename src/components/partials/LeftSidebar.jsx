@@ -57,7 +57,7 @@ function LeftSideBar() {
   }
 
   // Destructuring the technologies object
-  const { languages, frameworks, databses, tools } = technologies
+  const { languages, frameworks, databses, tools, language } = technologies
 
   return (
     <div className="sidebar w-full items-center bg-[#24242e] fixed top-0 leading-15 z-50">
@@ -208,46 +208,15 @@ function LeftSideBar() {
 
           <div className="mb-4 p-2">
             <div class="gap-8 sm:grid sm:grid-cols-1">
-              <div>
-                <dl>
-                  <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                    English
-                  </dt>
-                  <dd class="flex items-center mb-3">
-                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
-                      <div class="bg-yellow h-2.5 rounded dark:bg-yellow-500"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      80
-                    </span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                    Xitsonga
-                  </dt>
-                  <dd class="flex items-center mb-3">
-                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
-                      <div class="bg-yellow h-2.5 rounded dark:bg-yellow-500"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      80
-                    </span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                    Zulu
-                  </dt>
-                  <dd class="flex items-center mb-3">
-                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
-                      <div class="bg-yellow h-2.5 rounded dark:bg-yellow-500"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      50
-                    </span>
-                  </dd>
-                </dl>
+            <div>
+                {language.map((language) => (
+                  <dl key={language.name}>
+                    <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      {language.name}
+                    </dt>
+                    <BarRating className="p-2" rating={language.rating} />
+                  </dl>
+                ))}
               </div>
             </div>
           </div>
@@ -257,13 +226,13 @@ function LeftSideBar() {
           <button
             type="button"
             onClick={handleDownload}
-            class="text-white mt-4 bg-yellow-400  hover:bg-[#24242e] w-full focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+            class="text-white linksBtn mt-4 bg-yellow-400  hover:bg-[#24242e] w-full focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
           >
             <div className="flex items-center  text-white">
               <span>
                 <FaDownload className="text-white mr-1 dark:text-white hover:text-yellow-400 " />
               </span>
-              Download CV
+              Resume
             </div>
           </button>
 

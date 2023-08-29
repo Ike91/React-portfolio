@@ -53,11 +53,15 @@ li a:hover {
 
 /* header */
 .header{
-  
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 20px;
-  
+}
+
+.header img{
+  border-left: 10px solid #FFD700 !important;
+  border-bottom: 10px solid #FFD700 !important;
+  box-shadow: 0px 0px 10px #FFD700;
 }
 
 .header p{
@@ -248,13 +252,13 @@ li {
 
 /* projects */
 .linksBtn{
-  background-color: #FFEB3B !important;
+  background-color: #FFD700 !important;
   width: 100px !important;
   text-align: center;
 }
 
 .card-body h4 {
- color: #FFEB3B !important;
+ color: #FFD700 !important;
 }
 
 .project-card img {

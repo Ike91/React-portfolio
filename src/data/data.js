@@ -23,6 +23,12 @@ const technologies = {
         { name: "Git", rating: 6 },
         { name: "GitHub", rating: 6 },
     ],
+    language: [
+        { name: "English", rating:  8},
+        { name: "Xitsonga", rating: 10 },
+        { name: "Zulu", rating: 6 },
+        { name: "South Sotho", rating: 6 },
+    ],
 };
 
 export default technologies;
