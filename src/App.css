@@ -257,6 +257,11 @@ li {
   text-align: center;
 }
 
+.resumeBtn{
+  border: 1px solid white;
+  border-radius: 5px !important;
+}
+
 .card-body h4 {
  color: #FFD700 !important;
 }

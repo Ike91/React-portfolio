@@ -226,7 +226,7 @@ function LeftSideBar() {
           <button
             type="button"
             onClick={handleDownload}
-            class="text-white linksBtn mt-4 bg-yellow-400  hover:bg-[#24242e] w-full focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+            class="text-white resumeBtn mt-4 bg-yellow-400  hover:bg-[#24242e] w-full focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
           >
             <div className="flex items-center  text-white">
               <span>
