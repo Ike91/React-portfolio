@@ -260,6 +260,8 @@ li {
 .resumeBtn{
   border: 1px solid white;
   border-radius: 5px !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-body h4 {
