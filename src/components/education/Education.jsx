@@ -1,22 +1,22 @@
-import React from 'react'
-import { useState } from 'react'
-import Popup from '../partials/Popup'
-import { FaEye } from 'react-icons/fa'
-import { IoIosArrowForward } from 'react-icons/io'
+import React from "react";
+import { useState } from "react";
+import Popup from "../partials/Popup";
+import { FaEye } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 function Education() {
-  const [showPopup, setShowPopup] = useState(false)
+  const [showPopup, setShowPopup] = useState(false);
 
   const togglePopup = () => {
-    setShowPopup(!showPopup)
-  }
+    setShowPopup(!showPopup);
+  };
   return (
     <div className="Work">
       <div className=" p-4 sm:ml-64 sm:mr-40">
-        <ol className="relative border-l border-gray-200 dark:border-gray-700">
+        <ol className="relative border-l border-gray-700 dark:border-gray-700">
           <li className="ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-800 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
               <svg
-                className="w-2.5 h-2.5 text-yellow-800 dark:text-yellow-300"
+                className="w-2.5 h-2.5 text-yellow-300 dark:text-yellow-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -25,7 +25,7 @@ function Education() {
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </svg>
             </span>
-            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-lg font-semibold text-gray-900 text-white dark:text-white">
               Bachelor of Science in Mathematics and Computer Sciences
               <h4 className="mb-1 text-sm font-semibold text-yellow-400 dark:text-yellow-400">
                 University of Johannesburg
@@ -44,9 +44,9 @@ function Education() {
             </p>
           </li>
           <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-800 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
               <svg
-                className="w-2.5 h-2.5 text-blue-800 dark:text-yellow-300"
+                className="w-2.5 h-2.5 text-yellow-300 dark:text-yellow-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -55,10 +55,10 @@ function Education() {
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </svg>
             </span>
-            <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white leading-8">
+            <h3 className="flex items-center text-lg text-white font-semibold text-gray-900 dark:text-white leading-8">
               Certificates
             </h3>
-            <h4 className="flex items-center -mt-4 text-sm font-semibold text-yellow-400 dark:text-yellow-400 leading-8">
+            <h4 className="flex items-center  -mt-4 text-sm font-semibold text-yellow-400 dark:text-yellow-400 leading-8">
               udemy
             </h4>
 
@@ -94,9 +94,9 @@ function Education() {
             )}
           </li>
           <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-800 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
               <svg
-                className="w-2.5 h-2.5 text-blue-800 dark:text-yellow-300"
+                className="w-2.5 h-2.5 text-yellow-300 dark:text-yellow-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -105,7 +105,7 @@ function Education() {
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </svg>
             </span>
-            <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white leading-8">
+            <h3 className="flex items-center text-lg text-white font-semibold text-gray-900 dark:text-white leading-8">
               High School
             </h3>
             <h4 className="flex items-center -mt-4 text-sm font-semibold text-yellow-400 dark:text-yellow-400 leading-8">
@@ -117,9 +117,9 @@ function Education() {
             </time>
           </li>
           <li class="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-800 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
               <svg
-                className="w-2.5 h-2.5 text-yellow-800 dark:text-yellow-300"
+                className="w-2.5 h-2.5 text-yellow-300 dark:text-yellow-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -128,7 +128,7 @@ function Education() {
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </svg>
             </span>
-            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white leading-8">
+            <h3 className="mb-1 text-lg text-white font-semibold text-gray-900 dark:text-white leading-8">
               Kutlwanong | Centre for Maths, Science and Technology
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -182,7 +182,7 @@ function Education() {
         </ol>
       </div>
     </div>
-  )
+  );
 }
 
-export default Education
+export default Education;

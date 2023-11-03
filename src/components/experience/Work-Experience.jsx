@@ -1,16 +1,16 @@
-import React from 'react'
-import { MdEmail } from 'react-icons/md'
-import { BsTelephoneFill } from 'react-icons/bs'
+import React from "react";
+import { MdEmail } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
 
 function WorkExperience() {
   return (
     <div className="Work">
       <div className=" p-4 sm:ml-64 sm:mr-40">
-        <ol className="relative border-l border-gray-200 dark:border-gray-400">
+        <ol className="relative border-l border-gray-700 dark:border-gray-800">
           <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-800 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-800">
               <svg
-                className="w-2.5 h-2.5 text-yello-400 dark:text-yellow-400"
+                className="w-2.5 h-2.5 text-yellow-300 dark:text-yellow-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -19,12 +19,12 @@ function WorkExperience() {
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </svg>
             </span>
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-white dark:text-white">
               IT Technical Support (ICS)
             </h3>
-            <p className="text-sm dark:text-white">
+            <h4 className="text-sm text-yellow-400 dark:text-yellow-400">
               University of Johannesburg
-            </p>
+            </h4>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               08 March 2023 - Present
             </time>
@@ -140,7 +140,7 @@ function WorkExperience() {
         </ol>
       </div>
     </div>
-  )
+  );
 }
 
-export default WorkExperience
+export default WorkExperience;

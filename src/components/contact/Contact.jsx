@@ -1,36 +1,36 @@
-import React from 'react'
-import { useState } from 'react'
-import emailjs from 'emailjs-com'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import { BsFillTelephoneFill } from 'react-icons/bs'
-import { MdLocationOn } from 'react-icons/md'
+import React from "react";
+import { useState } from "react";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdLocationOn } from "react-icons/md";
 
 function Contact() {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_4tjo1vo',
-        'template_7lbqy3k',
+        "service_4tjo1vo",
+        "template_7lbqy3k",
         e.target,
-        'rHCgkfO85NHZSmgMn'
+        "rHCgkfO85NHZSmgMn"
       )
       .then(
         (result) => {
-          setIsFormSubmitted(true)
-          toast.success('Message sent!', { autoClose: 3000 })
-          e.target.reset()
+          setIsFormSubmitted(true);
+          toast.success("Message sent!", { autoClose: 3000 });
+          e.target.reset();
         },
         (error) => {
-          isFormSubmitted(false)
-          toast.error('Message sending failed!', { autoClose: 3000 })
-          e.target.reset()
+          isFormSubmitted(false);
+          toast.error("Message sending failed!", { autoClose: 3000 });
+          e.target.reset();
         }
-      )
-  }
+      );
+  };
 
   return (
     <div className="p-4 sm:ml-64 sm:h-screen sm:mr-35 pb-5">
@@ -93,7 +93,7 @@ function Contact() {
           <div className="mb-6">
             <label
               htmlFor="name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Your name
             </label>
@@ -101,15 +101,15 @@ function Contact() {
               type="text"
               id="name"
               name="name"
-              className="bg-transparent border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Your name"
+              className="bg-transparent border border-gray-300 text-white text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Isaac Mhlanga"
               required
             />
           </div>
           <div className="mb-6">
             <label
               for="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Your email
             </label>
@@ -117,15 +117,15 @@ function Contact() {
               type="email"
               id="email"
               name="email"
-              class="bg-transparent border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="name@gmail.com"
+              class="bg-transparent border border-gray-300 text-white text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="i.mhlanga@icloud.com"
               required
             />
           </div>
           <div className="mb-6">
             <label
               for="subject"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Subject
             </label>
@@ -133,7 +133,7 @@ function Contact() {
               type="text"
               id="subject"
               name="subject"
-              class="bg-transparent border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-transparent border border-gray-300 text-white text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="How can I help you"
               required
             />
@@ -141,7 +141,7 @@ function Contact() {
           <div className="mb-6">
             <label
               for="message"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Your message
             </label>
@@ -149,7 +149,7 @@ function Contact() {
               id="message"
               name="message"
               rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-transparent border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block p-2.5 w-full text-sm text-white bg-transparent border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Your message..."
             ></textarea>
           </div>
@@ -162,7 +162,7 @@ function Contact() {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

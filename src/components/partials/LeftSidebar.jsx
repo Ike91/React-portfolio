@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { AiOutlineCheck } from 'react-icons/ai'
-import BarRating from '../../components/partials/BarRating'
-import technologies from '../../data/data'
-import { Link } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.css'
-import resume from '../../documents/Isaac.pdf'
+import React, { useState, useEffect } from "react";
+import { AiOutlineCheck } from "react-icons/ai";
+import BarRating from "../../components/partials/BarRating";
+import technologies from "../../data/data";
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import resume from "../../documents/Isaac.pdf";
 
 import {
   FaHome,
@@ -17,47 +17,46 @@ import {
   FaInstagram,
   FaTwitter,
   FaCog,
-} from 'react-icons/fa'
+} from "react-icons/fa";
 
 function LeftSideBar() {
-  const [isAsideOpen, setIsAsideOpen] = useState(false)
+  const [isAsideOpen, setIsAsideOpen] = useState(false);
 
   //tongle the right sidebar of the mobile
   const toggleAside = () => {
-    setIsAsideOpen((prevIsAsideOpen) => !prevIsAsideOpen)
-  }
-
+    setIsAsideOpen((prevIsAsideOpen) => !prevIsAsideOpen);
+  };
 
   // Function to handle sidebar toggle
   const handleSidebarToggle = () => {
-    const sidebar = document.getElementById('default-sidebar')
-    sidebar.classList.toggle('-translate-x-full')
-  }
+    const sidebar = document.getElementById("default-sidebar");
+    sidebar.classList.toggle("-translate-x-full");
+  };
 
   // Add event listener to the button for sidebar toggle
   useEffect(() => {
     const sidebarToggleButton = document.querySelector(
       '[data-drawer-toggle="default-sidebar"]'
-    )
+    );
     if (sidebarToggleButton) {
-      sidebarToggleButton.addEventListener('click', handleSidebarToggle)
+      sidebarToggleButton.addEventListener("click", handleSidebarToggle);
     }
 
     // Cleanup event listener on component unmount
     return () => {
       if (sidebarToggleButton) {
-        sidebarToggleButton.removeEventListener('click', handleSidebarToggle)
+        sidebarToggleButton.removeEventListener("click", handleSidebarToggle);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   //download resume
   const handleDownload = () => {
-    window.open(resume, '_blank')
-  }
+    window.open(resume, "_blank");
+  };
 
   // Destructuring the technologies object
-  const { languages, frameworks, databses, tools, language } = technologies
+  const { languages, frameworks, databses, tools, language } = technologies;
 
   return (
     <div className="sidebar w-full items-center bg-[#24242e] fixed top-0 leading-15 z-50">
@@ -111,7 +110,7 @@ function LeftSideBar() {
         class="fixed left-0 z-40 w-64 overflow-y-auto scrollbar-hide h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div class="sticky top-0 left-0 p-2  bg-[#24242e] shadow-lg z-10">
+        <div class="sticky top-0 left-0 p-2  rounded-m bg-[#24242e] shadow-lg z-10">
           <div class="flex justify-center mt-2 mb-2 items-center">
             <img
               class="rounded-full border p-2"
@@ -120,7 +119,7 @@ function LeftSideBar() {
             />
           </div>
           <h4 className="text-m mt-3 pb-3 text-center font-medium text-gray-500 dark:text-gray-400">
-            Mr Mhlanga
+            Isaac Mhlanga
           </h4>
         </div>
 
@@ -208,7 +207,7 @@ function LeftSideBar() {
 
           <div className="mb-4 p-2">
             <div class="gap-8 sm:grid sm:grid-cols-1">
-            <div>
+              <div>
                 {language.map((language) => (
                   <dl key={language.name}>
                     <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">
@@ -226,7 +225,7 @@ function LeftSideBar() {
           <button
             type="button"
             onClick={handleDownload}
-            class="text-white resumeBtn mt-4 bg-yellow-400  hover:bg-[#24242e] w-full focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
+            class="text-white resumeBtn mt-4 bg-yellow-500  hover:bg-[#24242e] w-full focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-500 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block"
           >
             <div className="flex items-center  text-white">
               <span>
@@ -280,7 +279,7 @@ function LeftSideBar() {
       <aside
         id="default-sidebar"
         className={`fixed right-0 z-40 w-64 h-screen overflow-y-auto block transition-transform ${
-          isAsideOpen ? 'translate-x-0' : 'translate-x-full'
+          isAsideOpen ? "translate-x-0" : "translate-x-full"
         } sm:hidden`}
         aria-label="Sidebar"
       >
@@ -341,7 +340,7 @@ function LeftSideBar() {
         </div>
       </aside>
     </div>
-  )
+  );
 }
 
-export default LeftSideBar
+export default LeftSideBar;
