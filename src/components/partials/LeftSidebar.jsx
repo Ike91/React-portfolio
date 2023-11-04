@@ -142,7 +142,7 @@ function LeftSideBar() {
             </div>
           </div>
 
-          <hr className=" text-gray-500 dark:text-gray-400" />
+          <hr className="text-gray-500 dark:text-gray-400" />
 
           <div className="p-2 ">
             <p className="text-m font-medium text-gray-500 dark:text-gray-400">

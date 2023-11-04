@@ -59,6 +59,56 @@ function Education() {
               Certificates
             </h3>
             <h4 className="flex items-center  -mt-4 text-sm font-semibold text-yellow-400 dark:text-yellow-400 leading-8">
+              University Of Johannesburg
+            </h4>
+            <time className="block -mt-2 text-sm font-normal text-gray-400 dark:text-gray-500 leading-8">
+              Jun 2021
+            </time>
+            <h5 className="font-normal text-yellow-400 dark:text-yellow-400 leading-8">
+              An introduction to artificial intelligence (AI) in the fourth
+              industrial revolution (4IR)
+            </h5>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400 leading-8">
+              Artificial Intelligence in the 4IR** is a self-paced certificate
+              course exploring AI's evolution, applications, and ethical
+              considerations in the Fourth Industrial Revolution. Covering key
+              concepts in about 150 hours, participants gain expertise and
+              receive a digital certificate, preparing them for the future of
+              work.
+            </p>
+
+            <h5 className="font-normal text-yellow-400 dark:text-yellow-400 leading-8">
+              African Insights
+            </h5>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400 leading-8">
+              In "African Insights 2023", I deepened my understanding of
+              Africa's heritage and contemporary significance. Engaging with
+              diverse texts, I honed critical analysis skills and gained
+              sensitivity to marginalized voices. This course broadened my
+              cultural awareness and understanding of decoloniality and African
+              thought.
+            </p>
+            <div className="mb-5">
+              <a
+                href="https://news.uj.ac.za/news/uj-introduces-two-100-free-fully-online-course-moocs-to-the-public-introduction-to-artificial-intelligence-in-the-4ir-and-african-insights-2/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  type="button"
+                  class="readmore-btn text-white bg-yellow-400 border border-gray-800 rounded-md hover:bg-gray-800 w-10px hover:bg-[#24242e] focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-yellow-600 dark:hover:bg-[#24242e] focus:outline-none dark:focus:ring-yellow-800 block flex items-center justify-center"
+                >
+                  <div className="flex items-center text-center text-white">
+                    <span>
+                      <IoIosArrowForward className="text-white mr-1 dark:text-white hover:text-yellow-400 " />
+                    </span>
+                    Read More
+                  </div>
+                </button>
+              </a>
+            </div>
+
+            <h4 className="flex items-center  text-sm font-semibold text-yellow-400 dark:text-yellow-400 leading-8">
               udemy
             </h4>
 

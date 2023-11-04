@@ -27,10 +27,9 @@ li a:hover {
 .card {
   background-color: #24242e !important;
   border: 1px solid #302f2f;
- 
 }
-.popupform{
-    background-color: #24242e !important;
+.popupform {
+  background-color: #24242e !important;
   border: 1px solid #302f2f;
 }
 
@@ -52,33 +51,29 @@ li a:hover {
 }
 
 /* header */
-.header{
+.header {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 20px;
 }
 
-.header img{
-  border-left: 10px solid #FFD700 !important;
+.header img {
+  /* border-left: 10px solid #FFD700 !important;
   border-bottom: 10px solid #FFD700 !important;
-  box-shadow: 0px 0px 10px #FFD700;
+  box-shadow: 0px 0px 10px #FFD700; */
 }
 
-.header p{
-  
+.header p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 22px;
-  
 }
 
 /* education */
-.education p{
-  
+.education p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
-  
 }
 
 /* 
@@ -86,7 +81,7 @@ sidebar  */
 .sidebar h4 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.sidebar li{
+.sidebar li {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 18px;
@@ -112,11 +107,10 @@ sidebar  */
   letter-spacing: 0.3px;
   font-size: 20px;
 }
-.about p{
+.about p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 20px;
-  
 }
 
 /* education */
@@ -133,6 +127,10 @@ sidebar  */
 }
 .education .btn {
   background: rgb(172, 172, 65) !important;
+}
+
+.readmore-btn {
+  height: 35px !important;
 }
 
 /* work experience */
@@ -153,6 +151,11 @@ sidebar  */
 }
 
 /* home */
+
+.button-container button {
+  width: 110px !important;
+  height: 35px !important;
+}
 .projects a {
   text-decoration: none !important;
 }
@@ -167,7 +170,6 @@ sidebar  */
   letter-spacing: 0.3px;
 }
 
-
 /* contact */
 .contact {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -175,14 +177,12 @@ sidebar  */
   font-size: 18px;
 }
 
-
-.Header-text{
+.Header-text {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 0.3px;
   font-size: 50px;
   font-weight: bolder;
 }
-
 
 .random-text {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -190,74 +190,65 @@ sidebar  */
   font-size: 24px;
 }
 
+.button-container {
+  display: flex;
+}
 
+.button {
+  width: 120px;
+  margin: 0 10px;
+}
 
- .button-container {
-            display: flex;
-            
-        }
-
-        .button {
-            width: 120px;
-            margin: 0 10px; 
-        }
-
-        @media screen and (max-width: 600px) {
-            .button-container {
-                justify-content: center;
-                width: 100%; 
-            }
-        }
-
-
+@media screen and (max-width: 600px) {
+  .button-container {
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 /* Media query for smaller screens like smartphones */
 @media (max-width: 768px) {
-  .random-text{
+  .random-text {
     text-align: center; /* Center-align the text on smaller screens */
   }
-  .Header-text{
-    text-align: center; 
+  .Header-text {
+    text-align: center;
     margin-top: 0 !important;
   }
-  .student-text{
-    text-align: center; 
+  .student-text {
+    text-align: center;
     margin-top: 0 !important;
   }
 
-  .header{
+  .header {
     padding: 2px !important;
     background: transparent !important;
   }
- 
- 
 }
 
 @media (max-width: 768px) {
   ul {
-    list-style-type: none; 
+    list-style-type: none;
     list-style: none !important;
-    padding: 0; 
-    margin: 0; 
-}
+    padding: 0;
+    margin: 0;
+  }
 
-li {
+  li {
     list-style: none !important;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
+  }
 }
- 
-}
-
 
 /* projects */
-.linksBtn{
-  background-color: #FFD700 !important;
+.linksBtn {
+  background-color: #ffd700 !important;
   width: 100px !important;
   text-align: center;
 }
 
-.resumeBtn{
+.resumeBtn {
   border: 1px solid white;
   border-radius: 5px !important;
   align-items: center;
@@ -265,11 +256,10 @@ li {
 }
 
 .card-body h4 {
- color: #FFD700 !important;
+  color: #ffd700 !important;
 }
 
 .project-card img {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-
